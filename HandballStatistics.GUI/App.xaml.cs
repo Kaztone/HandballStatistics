@@ -1,4 +1,8 @@
-﻿using System.Windows;
+﻿using HandballStatistics.Interfaces.Services;
+using HandballStatistics.Models;
+using HandballStatistics.Services.DbServices;
+using System;
+using System.Windows;
 
 namespace HandballStatistics.GUI
 {

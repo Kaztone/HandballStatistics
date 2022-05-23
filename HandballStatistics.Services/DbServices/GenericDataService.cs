@@ -1,4 +1,5 @@
 ﻿using HandballStatistics.EntityFramework.Contexts;
+using HandballStatistics.EntityFramework.Factories;
 using HandballStatistics.Interfaces.Services;
 using HandballStatistics.Models;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace HandballStatistics.Services.DbServices
 
         public GenericDataService()
         {
-            this.context = new HandballStatisticsDbContext();
+            this.context = new HandballStatisticsDbContextFactory().Context;
         }
 
         public async Task<T> Create(T entity)

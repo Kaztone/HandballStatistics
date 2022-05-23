@@ -1,6 +1,5 @@
 C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Interfaces.dll
 C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Interfaces.pdb
-C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Interfaces\obj\Debug\HandballStatistics.Interfaces.csproj.AssemblyReference.cache
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Interfaces\obj\Debug\HandballStatistics.Interfaces.csproj.CoreCompileInputs.cache
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Interfaces\obj\Debug\HandballStatistics.Interfaces.dll
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Interfaces\obj\Debug\HandballStatistics.Interfaces.pdb

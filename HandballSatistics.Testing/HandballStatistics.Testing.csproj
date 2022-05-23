@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D89D902-F1EC-4F73-9486-81BB7F49B92E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HandballSatistics.Testing</RootNamespace>
+    <AssemblyName>HandballSatistics.Testing</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HandballStatistics.EntityFramework\HandballStatistics.EntityFramework.csproj">
+      <Project>{E093AD4A-700D-4726-82E2-B0B81A04CD89}</Project>
+      <Name>HandballStatistics.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Interfaces\HandballStatistics.Interfaces.csproj">
+      <Project>{9EC22CCB-AF1A-442F-B860-F6C02A69FF27}</Project>
+      <Name>HandballStatistics.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Models\HandballStatistics.Models.csproj">
+      <Project>{497F68A0-5F0B-4806-9753-7619EC860293}</Project>
+      <Name>HandballStatistics.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Services\HandballStatistics.Services.csproj">
+      <Project>{E482B765-9C73-490B-855B-D14B05F4C705}</Project>
+      <Name>HandballStatistics.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

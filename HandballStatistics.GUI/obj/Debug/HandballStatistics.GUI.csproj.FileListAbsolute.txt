@@ -12,3 +12,17 @@ C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\Handb
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\HandballStatistics.GUI.csproj.CoreCompileInputs.cache
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\HandballStatistics.GUI.exe
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\HandballStatistics.GUI.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.Interfaces.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.Models.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.Services.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.EntityFramework.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\EntityFramework.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.Interfaces.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.Models.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.Services.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.EntityFramework.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\HandballStatistics.EntityFramework.dll.config
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\EntityFramework.xml
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\HandballStatistics.GUI.csproj.CopyComplete
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\EntityFramework.SqlServer.xml

@@ -35,6 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -93,6 +100,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HandballStatistics.Interfaces\HandballStatistics.Interfaces.csproj">
+      <Project>{9EC22CCB-AF1A-442F-B860-F6C02A69FF27}</Project>
+      <Name>HandballStatistics.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Models\HandballStatistics.Models.csproj">
+      <Project>{497F68A0-5F0B-4806-9753-7619EC860293}</Project>
+      <Name>HandballStatistics.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Services\HandballStatistics.Services.csproj">
+      <Project>{E482B765-9C73-490B-855B-D14B05F4C705}</Project>
+      <Name>HandballStatistics.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
