@@ -85,21 +85,21 @@ namespace HandballStatistics.Services.DbServices
             }
         }
 
-        public Task<Account> GetByEmail(string email)
+        public async Task<Account> GetByEmail(string email)
         {
             using (HandballStatisticsDbContext context = this.context.CreateContext())
             {
-                return context.Accounts
+                return await context.Accounts
                     .Include(a => a.AccountHolder)
                     .FirstOrDefaultAsync(a => a.AccountHolder.Email == email);
             }
         }
 
-        public Task<Account> GetByUsername(string username)
+        public async Task<Account> GetByUsername(string username)
         {
             using (HandballStatisticsDbContext context = this.context.CreateContext())
             {
-                return context.Accounts
+                return await context.Accounts
                     .Include(a => a.AccountHolder)
                     .FirstOrDefaultAsync(a => a.AccountHolder.UserName == username);
             }
