@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandballStatistics.Models",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandballStatistics.Services", "HandballStatistics.Services\HandballStatistics.Services.csproj", "{E482B765-9C73-490B-855B-D14B05F4C705}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandballStatistics.GUI", "HandballStatistics.GUI\HandballStatistics.GUI.csproj", "{88BE5B7E-020F-4770-A258-93D252BCD213}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E482B765-9C73-490B-855B-D14B05F4C705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E482B765-9C73-490B-855B-D14B05F4C705}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E482B765-9C73-490B-855B-D14B05F4C705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BE5B7E-020F-4770-A258-93D252BCD213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BE5B7E-020F-4770-A258-93D252BCD213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BE5B7E-020F-4770-A258-93D252BCD213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BE5B7E-020F-4770-A258-93D252BCD213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
