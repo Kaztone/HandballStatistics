@@ -1,12 +1,10 @@
-﻿using HandballStatistics.EntityFramework.Factories;
+﻿using HandballStatistics.EntityFramework.Contexts;
 using HandballStatistics.Interfaces.Services;
 using HandballStatistics.Models;
 using HandballStatistics.Services.DbServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HandballStatistics.Testing
 {
@@ -14,13 +12,43 @@ namespace HandballStatistics.Testing
     {
         static void Main(string[] args)
         {
-            IDataService<User> dataService = new GenericDataService<User>();
-            bool check = dataService.Init().Result;
-            Console.WriteLine($"{check}{Environment.NewLine}");
+            IDataService<User> dataService = new GenericDataService<User>(
+                new HandballStatisticsDbContext());
 
-            dataService = new GenericDataService<User>();
+            IDataService<Account> accountDataService = new AccountDataService(
+                new HandballStatisticsDbContext());
+
+            // Check connection GenericDataService
+            bool check = dataService.Init().Result;
+            Console.WriteLine($"GenericDataService datbase connection established: {check}{Environment.NewLine}");
+
+            // Check connection AccountDataService
+            bool check2 = accountDataService.Init().Result;
+            Console.WriteLine($"AccountDataService datbase connection established: {check}{Environment.NewLine}");
+
+            // Check "Get" GenericDataService
             User user = dataService.Get(1).Result;
-            Console.WriteLine($"Name: {user.UserName}\nEmail: {user.Email}\nPassword: {user.Password}\nDate joined: {user.DateJoined.ToShortDateString()}");
+            Console.WriteLine(
+                $"Id: {user.Id}\n" +
+                $"Name: {user.UserName}\n" +
+                $"Email: {user.Email}\n" +
+                $"Password: {user.Password}\n" +
+                $"Date joined: {user.DateJoined.ToShortDateString()}" +
+                $"{Environment.NewLine}"
+            );
+
+            // Check "GetAll" GenericDataService
+            int numberUsers = dataService.GetAll().Result.Count();
+            Console.WriteLine($"Total users:{numberUsers}{Environment.NewLine}");
+
+            // Check "Get" AccountDataService
+            Account account = accountDataService.Get(1).Result;
+            account.AccountHolder = dataService.Get(account.AccountHolderId).Result;
+            Console.WriteLine(
+                $"AccountId: {account.Id}\n" +
+                $"AccountHolderId: {account.AccountHolderId}\n" +
+                $"AccountHolderName: {account.AccountHolder.UserName}\n"
+            );
 
             Console.ReadLine();
         }
