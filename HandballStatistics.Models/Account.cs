@@ -10,8 +10,21 @@ namespace HandballStatistics.Models
     {
         #region ------------------------------ Properties, Indexer --------------------------------------------------
 
+        public int AccountHolderId { get; set; }
+
         public User AccountHolder { get; set; }
 
         #endregion
+
+        private Account()
+        {
+            
+        }
+
+        public Account(User user) : base()
+        {
+            this.AccountHolder = user;
+            this.AccountHolderId = user.Id;
+        }
     }
 }
