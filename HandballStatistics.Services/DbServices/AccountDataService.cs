@@ -49,7 +49,9 @@ namespace HandballStatistics.Services.DbServices
         {
             using (HandballStatisticsDbContext context = this.context.CreateContext())
             {
-                Account entity = await context.Set<Account>().FirstOrDefaultAsync((e) => e.Id == id);
+                Account entity = await context.Accounts
+                    .Include(a => a.AccountHolder)
+                    .FirstOrDefaultAsync((e) => e.Id == id);
                 return entity;
             }
         }
@@ -58,7 +60,9 @@ namespace HandballStatistics.Services.DbServices
         {
             using (HandballStatisticsDbContext context = this.context.CreateContext())
             {
-                IEnumerable<Account> entities = await context.Set<Account>().ToListAsync();
+                IEnumerable<Account> entities = await context.Accounts
+                    .Include(a => a.AccountHolder)
+                    .ToListAsync();
                 return entities;
             }
         }
@@ -83,12 +87,22 @@ namespace HandballStatistics.Services.DbServices
 
         public Task<Account> GetByEmail(string email)
         {
-            throw new NotImplementedException();
+            using (HandballStatisticsDbContext context = this.context.CreateContext())
+            {
+                return context.Accounts
+                    .Include(a => a.AccountHolder)
+                    .FirstOrDefaultAsync(a => a.AccountHolder.Email == email);
+            }
         }
 
         public Task<Account> GetByUsername(string username)
         {
-            throw new NotImplementedException();
+            using (HandballStatisticsDbContext context = this.context.CreateContext())
+            {
+                return context.Accounts
+                    .Include(a => a.AccountHolder)
+                    .FirstOrDefaultAsync(a => a.AccountHolder.UserName == username);
+            }
         }
     }
 }
