@@ -1,0 +1,5 @@
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Domain.dll
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Domain.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Domain\obj\Debug\HandballStatistics.Domain.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Domain\obj\Debug\HandballStatistics.Domain.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Domain\obj\Debug\HandballStatistics.Domain.pdb
