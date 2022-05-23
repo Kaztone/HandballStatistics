@@ -11,7 +11,7 @@ namespace HandballStatistics.EntityFramework.Contexts
 
         public DbSet<User> Users { get; set; }
 
-        // public DbSet<Account> Accounts { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
         #endregion
 
@@ -22,6 +22,11 @@ namespace HandballStatistics.EntityFramework.Contexts
         #endregion
 
         #region ------------------------------ Helper-Methods -------------------------------------------------------
+
+        public HandballStatisticsDbContext CreateContext()
+        {
+            return new HandballStatisticsDbContext();
+        }
 
         public override int SaveChanges()
         {
