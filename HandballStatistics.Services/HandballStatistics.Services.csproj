@@ -58,6 +58,10 @@
       <Project>{E093AD4A-700D-4726-82E2-B0B81A04CD89}</Project>
       <Name>HandballStatistics.EntityFramework</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Exceptions\HandballStatistics.Exceptions.csproj">
+      <Project>{C291901B-381F-40A6-8D4C-0F5F3F29D9EC}</Project>
+      <Name>HandballStatistics.Exceptions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HandballStatistics.Interfaces\HandballStatistics.Interfaces.csproj">
       <Project>{9EC22CCB-AF1A-442F-B860-F6C02A69FF27}</Project>
       <Name>HandballStatistics.Interfaces</Name>

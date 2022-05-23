@@ -1,4 +1,5 @@
-﻿using HandballStatistics.Interfaces.Services;
+﻿using HandballStatistics.Exceptions;
+using HandballStatistics.Interfaces.Services;
 using HandballStatistics.Models;
 using System;
 using System.Threading.Tasks;
@@ -18,19 +19,11 @@ namespace HandballStatistics.Services.AuthenticationServices
         {
             Account storedAccount = await this.accountService.GetByUsername(username);
 
-            if(storedAccount.AccountHolder.Password != password)
-            {
-                throw new Exception();
-                #warning implement Exception
-            }
-
-            return storedAccount;
+            return (storedAccount.AccountHolder.Password != password) ? throw new InvalidPasswordException(username, password) : storedAccount;
         }
 
         public async Task<bool> Register(string username, string email, string password, string confirmPassword)
         {
-            bool success = false;
-
             if (password != confirmPassword)
             {
                 throw new Exception();
@@ -65,9 +58,7 @@ namespace HandballStatistics.Services.AuthenticationServices
 
             await this.accountService.Create(account);
 
-            success = true;
-
-            return success;
+            return true;
         }
     }
 }
