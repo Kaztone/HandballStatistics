@@ -36,3 +36,6 @@ C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\Micro
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.GUI.exe.config
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.GUI.exe
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.GUI.pdb

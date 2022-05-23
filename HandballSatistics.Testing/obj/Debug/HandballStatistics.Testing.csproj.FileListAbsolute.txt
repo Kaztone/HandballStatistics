@@ -19,3 +19,6 @@ C:\Users\david\Desktop\HandballStatistics\HandballSatistics.Testing\obj\Debug\Ha
 C:\Users\david\Desktop\HandballStatistics\HandballSatistics.Testing\obj\Debug\HandballSatistics.Testing.pdb
 C:\Users\david\Desktop\HandballStatistics\HandballSatistics.Testing\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\david\Desktop\HandballStatistics\HandballSatistics.Testing\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballSatistics.Testing.exe.config
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballSatistics.Testing.exe
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballSatistics.Testing.pdb

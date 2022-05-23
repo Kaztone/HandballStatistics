@@ -3,3 +3,6 @@ C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Models\bin\Debug\Ha
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Models\obj\Debug\HandballStatistics.Models.csproj.CoreCompileInputs.cache
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Models\obj\Debug\HandballStatistics.Models.dll
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Models\obj\Debug\HandballStatistics.Models.pdb
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Models.dll
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Models.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Models\obj\Debug\HandballStatistics.Models.csproj.AssemblyReference.cache

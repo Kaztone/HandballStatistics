@@ -1,0 +1,6 @@
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Exceptions.dll
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Exceptions.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Exceptions\obj\Debug\HandballStatistics.Exceptions.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Exceptions\obj\Debug\HandballStatistics.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Exceptions\obj\Debug\HandballStatistics.Exceptions.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Exceptions\obj\Debug\HandballStatistics.Exceptions.pdb

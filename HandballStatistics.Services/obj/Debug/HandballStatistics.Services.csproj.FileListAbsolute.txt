@@ -16,3 +16,5 @@ C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Services\bin\Debug\
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Services\obj\Debug\HandballStatistics.Services.csproj.CopyComplete
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Services\obj\Debug\HandballStatistics.Services.dll
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Services\obj\Debug\HandballStatistics.Services.pdb
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Services.dll
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Services.pdb
