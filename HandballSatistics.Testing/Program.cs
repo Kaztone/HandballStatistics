@@ -1,6 +1,7 @@
 ﻿using HandballStatistics.EntityFramework.Contexts;
 using HandballStatistics.Interfaces.Services;
 using HandballStatistics.Models;
+using HandballStatistics.Services.AuthenticationServices;
 using HandballStatistics.Services.DbServices;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,8 @@ namespace HandballStatistics.Testing
 
             IDataService<Account> accountDataService = new AccountDataService(
                 new HandballStatisticsDbContext());
+
+            IAuthenticationService authenticationService = new AuthenticationService(accountDataService);
 
             // Check connection GenericDataService
             bool check = dataService.Init().Result;
@@ -48,6 +51,15 @@ namespace HandballStatistics.Testing
                 $"AccountId: {account.Id}\n" +
                 $"AccountHolderId: {account.AccountHolderId}\n" +
                 $"AccountHolderName: {account.AccountHolder.UserName}\n"
+            );
+
+            // Check Register
+            //authenticationService.Register("registrationTest", "test@hotmail.com", "registrationTest", "registrationTest");
+
+            // Check number of Users and Accounts
+            Console.WriteLine(
+                $"Total users: {dataService.GetAll().Result.Count()}\n" +
+                $"Total accounts: {accountDataService.GetAll().Result.Count()}\n"
             );
 
             Console.ReadLine();

@@ -7,23 +7,16 @@ namespace HandballStatistics.Services.AuthenticationServices
 {
     public class AuthenticationService : IAuthenticationService
     {
-        private readonly IAccountDataService accountService;
+        private readonly IDataService<Account> accountService;
 
-        public AuthenticationService(IAccountDataService accountService)
+        public AuthenticationService(IDataService<Account> accountService)
         { 
             this.accountService = accountService;
         }
 
         public async Task<Account> Login(string username, string password)
         {
-            Account storedAccount = await this.accountService.GetByUsername(username);
-
-            if(storedAccount.AccountHolder.Password != password)
-            {
-                throw new Exception();
-            }
-
-            return storedAccount;
+            throw new NotImplementedException();
         }
 
         public async Task<bool> Register(string username, string email, string password, string confirmPassword)
