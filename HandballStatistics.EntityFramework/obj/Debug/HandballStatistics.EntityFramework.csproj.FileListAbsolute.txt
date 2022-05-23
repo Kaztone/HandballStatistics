@@ -6,3 +6,5 @@ C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.csproj.CopyComplete
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.dll
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.Migrations.InitialCreate.resources
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.csproj.GenerateResource.cache
