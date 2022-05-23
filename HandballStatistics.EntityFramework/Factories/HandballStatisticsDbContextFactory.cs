@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 namespace HandballStatistics.EntityFramework.Factories
 {
-    public class HandballStatisticsDbContextFactory
+    public class HandballStatisticsDbContextFactory : HandballStatisticsDbContext
     {
-        public HandballStatisticsDbContext CreateContext()
+        public HandballStatisticsDbContext Context { get; }
+        
+        public HandballStatisticsDbContextFactory()
         {
-            return new HandballStatisticsDbContext();
+            this.Context = new HandballStatisticsDbContext();
         }
     }
 }

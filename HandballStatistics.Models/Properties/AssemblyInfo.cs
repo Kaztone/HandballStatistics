@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HandballStatistics.Domain")]
+[assembly: AssemblyTitle("HandballStatistics.Models")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("HandballStatistics.Domain")]
+[assembly: AssemblyProduct("HandballStatistics.Models")]
 [assembly: AssemblyCopyright("Copyright © HP Inc. 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a9353b28-9233-47f5-9fd0-6a40b3687b69")]
+[assembly: Guid("497f68a0-5f0b-4806-9753-7619ec860293")]
 
 // Version information for an assembly consists of the following four values:
 //

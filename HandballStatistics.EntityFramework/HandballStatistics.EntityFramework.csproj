@@ -65,15 +65,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HandballStatistics.Domain\HandballStatistics.Domain.csproj">
-      <Project>{A9353B28-9233-47F5-9FD0-6A40B3687B69}</Project>
-      <Name>HandballStatistics.Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Migrations\202205231051171_InitialCreate.resx">
       <DependentUpon>202205231051171_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HandballStatistics.Models\HandballStatistics.Models.csproj">
+      <Project>{497F68A0-5F0B-4806-9753-7619EC860293}</Project>
+      <Name>HandballStatistics.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

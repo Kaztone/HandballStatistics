@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HandballStatistics.Domain.Models
+namespace HandballStatistics.Models
 {
     public class DomainObject
     {

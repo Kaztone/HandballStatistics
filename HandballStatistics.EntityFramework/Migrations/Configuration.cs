@@ -1,5 +1,5 @@
-﻿using HandballStatistics.Domain.Models;
-using HandballStatistics.EntityFramework.Contexts;
+﻿using HandballStatistics.EntityFramework.Contexts;
+using HandballStatistics.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
