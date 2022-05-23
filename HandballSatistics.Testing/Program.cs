@@ -16,8 +16,11 @@ namespace HandballStatistics.Testing
         {
             IDataService<User> dataService = new GenericDataService<User>();
             bool check = dataService.Init().Result;
+            Console.WriteLine($"{check}{Environment.NewLine}");
 
-            Console.WriteLine(check);
+            dataService = new GenericDataService<User>();
+            User user = dataService.Get(1).Result;
+            Console.WriteLine($"Name: {user.UserName}\nEmail: {user.Email}\nPassword: {user.Password}\nDate joined: {user.DateJoined.ToShortDateString()}");
 
             Console.ReadLine();
         }
