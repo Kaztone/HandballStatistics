@@ -11,8 +11,6 @@ namespace HandballStatistics.EntityFramework.Contexts
 
         public DbSet<User> Users { get; set; }
 
-        public DbSet<Account> Accounts { get; set; }
-
         #endregion
 
         #region ------------------------------ Constructor, Destructor, Dispose, Clone ------------------------------
