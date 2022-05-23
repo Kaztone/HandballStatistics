@@ -21,16 +21,23 @@ namespace HandballStatistics.EntityFramework.Migrations
                 return;
             }
 
+            User user = new User()
+            {
+                UserName = "admin",
+                Email = "admin@hotmail.com",
+                Password = "admin",
+                DateJoined = new DateTime(2022, 3, 23).Date
+            };
+
             context.Users.AddRange(new List<User>()
             {
-                new User()
-                {
-                    UserName = "admin",
-                    Email = "admin@hotmail.com",
-                    Password = "admin",
-                    DateJoined = new DateTime(2022, 3, 23).Date
-                }
+                user
             });
+
+            context.Accounts.AddRange(new List<Account>()
+            {
+                new Account(user)
+            }); 
         }
     }
 }

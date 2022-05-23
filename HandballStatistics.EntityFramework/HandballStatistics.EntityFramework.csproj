@@ -52,10 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\HandballStatisticsDbContext.cs" />
-    <Compile Include="Factories\HandballStatisticsDbContextFactory.cs" />
     <Compile Include="Migrations\202205231051171_InitialCreate.cs" />
     <Compile Include="Migrations\202205231051171_InitialCreate.designer.cs">
       <DependentUpon>202205231051171_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231339178_AddedDbSetAccounts.cs" />
+    <Compile Include="Migrations\202205231339178_AddedDbSetAccounts.designer.cs">
+      <DependentUpon>202205231339178_AddedDbSetAccounts.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +70,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202205231051171_InitialCreate.resx">
       <DependentUpon>202205231051171_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231339178_AddedDbSetAccounts.resx">
+      <DependentUpon>202205231339178_AddedDbSetAccounts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
