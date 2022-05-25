@@ -22,43 +22,45 @@ namespace HandballStatistics.Services.AuthenticationServices
             return (storedAccount.AccountHolder.Password != password) ? throw new InvalidPasswordException(username, password) : storedAccount;
         }
 
-        public async Task<bool> Register(string username, string email, string password, string confirmPassword)
+        public async Task<RegistrationResult> Register(string username, string email, string password, string confirmPassword)
         {
+            RegistrationResult registrationResult = RegistrationResult.Success;
+
             if (password != confirmPassword)
             {
-                throw new Exception();
-                #warning implement Exception
+                registrationResult = RegistrationResult.PasswordsDoNotMatch;
             }
 
             Account emailAccount = await this.accountService.GetByEmail(email);
 
             if(emailAccount != null)
             {
-                throw new Exception();
-                #warning implement Exception
+                registrationResult = RegistrationResult.EmailAlreadyExists;
             }
 
             Account usernameAccount = await this.accountService.GetByUsername(username);
 
             if(usernameAccount != null)
             {
-                throw new Exception();
-                #warning implement Exception
+                registrationResult = RegistrationResult.UsernameAlrreadyExists;
             }
 
-            User user = new User()
+            if(registrationResult == RegistrationResult.Success)
             {
-                UserName = username,
-                Email = email,
-                Password = password,
-                DateJoined = DateTime.Now.Date
-            };
+                User user = new User()
+                {
+                    UserName = username,
+                    Email = email,
+                    Password = password,
+                    DateJoined = DateTime.Now.Date
+                };
 
-            Account account = new Account(user);
+                Account account = new Account(user);
 
-            await this.accountService.Create(account);
+                await this.accountService.Create(account);
+            }
 
-            return true;
+            return registrationResult;
         }
     }
 }
