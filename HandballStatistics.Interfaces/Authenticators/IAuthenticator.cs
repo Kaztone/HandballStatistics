@@ -10,13 +10,15 @@ namespace HandballStatistics.Interfaces.Authenticators
 {
     public interface IAuthenticator
     {
-        User CurrentUser { get; }
+        Account CurrentAccount { get; }
 
         bool IsLoggedIn { get; }
 
         Task<RegistrationResult> Register(string username, string email, string password, string confirmPassword);
 
         Task<bool> Login(string username, string password);
+
+        void Logout();
 
     }
 }
