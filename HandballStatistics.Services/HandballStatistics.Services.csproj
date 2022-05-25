@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthenticationServices\AuthenticationService.cs" />
+    <Compile Include="AuthenticationServices\Authenticator.cs" />
     <Compile Include="DbServices\AccountDataService.cs" />
     <Compile Include="DbServices\GenericDataService.cs" />
     <Compile Include="DbServices\NonQueryDataService.cs" />
