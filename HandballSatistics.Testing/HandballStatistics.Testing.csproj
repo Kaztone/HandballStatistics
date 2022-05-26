@@ -73,6 +73,10 @@
       <Project>{E482B765-9C73-490B-855B-D14B05F4C705}</Project>
       <Name>HandballStatistics.Services</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Websites\HandballStatistics.Websites.csproj">
+      <Project>{2652B4CE-1F4B-4418-80B7-65C01AED3DEA}</Project>
+      <Name>HandballStatistics.Websites</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

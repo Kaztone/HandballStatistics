@@ -1,8 +1,10 @@
 ﻿using HandballStatistics.EntityFramework.Contexts;
+using HandballStatistics.Interfaces.Models;
 using HandballStatistics.Interfaces.Services;
 using HandballStatistics.Models;
 using HandballStatistics.Services.AuthenticationServices;
 using HandballStatistics.Services.DbServices;
+using HandballStatistics.Websites;
 using System;
 using System.Linq;
 
@@ -21,6 +23,8 @@ namespace HandballStatistics.Testing
                 new HandballStatisticsDbContext());
 
             IAuthenticationService authenticationService = new AuthenticationService(accountDataService);
+
+            IWebsite website = new Facebook();
 
             #endregion
 
@@ -91,6 +95,20 @@ namespace HandballStatistics.Testing
             Console.WriteLine($"Logged in as: {account.AccountHolder.UserName}\n");
 
             Console.WriteLine("--------------------------------------------------");
+
+            account = accountDataService.GetByUsername("admin").Result;
+
+            Console.WriteLine(account.AccountHolder.UserName);
+            Console.WriteLine(account.AccountHolder.Id);
+
+            #endregion
+
+            #region ------------------------------ AuthenticationService ---------------------------
+
+            Console.WriteLine("Open website facebook on [ENTER]:");
+            Console.ReadLine();
+
+            System.Diagnostics.Process.Start(website.URL);
 
             #endregion
 
