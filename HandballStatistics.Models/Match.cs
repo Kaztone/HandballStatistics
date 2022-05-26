@@ -9,6 +9,8 @@ namespace HandballStatistics.Models
 
         public DateTime Date { get; set; }
 
+        public string FileName { get; set; }
+
         public ICollection<Shot> Shots { get; set; }
 
     }
