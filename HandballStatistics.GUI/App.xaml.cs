@@ -39,6 +39,10 @@ namespace HandballStatistics.GUI
             services.AddSingleton<HandballStatisticsDbContext>();
             services.AddSingleton<IAuthenticationService, AuthenticationService>();
             services.AddSingleton<IDataService<Account>, AccountDataService>();
+            services.AddSingleton<IDataService<Country>, GenericDataService<Country>>();
+            services.AddSingleton<IDataService<League>, GenericDataService<League>>();
+            services.AddSingleton<IDataService<Hall>, GenericDataService<Hall>>();
+            services.AddSingleton<IDataService<Team>, GenericDataService<Team>>();
             services.AddSingleton<IAccountDataService, AccountDataService>();
 
             // ViewModels as services

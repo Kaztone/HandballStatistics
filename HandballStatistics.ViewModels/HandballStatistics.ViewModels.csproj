@@ -65,6 +65,10 @@
       <Project>{9EC22CCB-AF1A-442F-B860-F6C02A69FF27}</Project>
       <Name>HandballStatistics.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Models\HandballStatistics.Models.csproj">
+      <Project>{497F68A0-5F0B-4806-9753-7619EC860293}</Project>
+      <Name>HandballStatistics.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
