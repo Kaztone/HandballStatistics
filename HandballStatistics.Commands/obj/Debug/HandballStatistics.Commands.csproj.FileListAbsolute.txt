@@ -1,0 +1,13 @@
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\bin\Debug\HandballStatistics.Commands.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\bin\Debug\HandballStatistics.Commands.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\bin\Debug\HandballStatistics.Interfaces.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\bin\Debug\HandballStatistics.Models.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\bin\Debug\HandballStatistics.Interfaces.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\bin\Debug\HandballStatistics.Models.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\obj\Debug\HandballStatistics.Commands.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\obj\Debug\HandballStatistics.Commands.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\obj\Debug\HandballStatistics.Commands.csproj.CopyComplete
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\obj\Debug\HandballStatistics.Commands.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\obj\Debug\HandballStatistics.Commands.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\bin\Debug\HandballStatistics.Websites.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Commands\bin\Debug\HandballStatistics.Websites.pdb
