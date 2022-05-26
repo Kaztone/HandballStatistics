@@ -32,19 +32,89 @@
         <Grid Background="{StaticResource bgrdSubBodyBrush}"
               Grid.Row="1">
 
-            <StackPanel Style="{StaticResource stpDevelopment}">
-                <!-- Textblock: Header -->
-                <TextBlock Style="{StaticResource txtblDevelopmentHeader}"
-                       Text="{Binding WelcomeMessage}"/>
-                <!-- Textblock: Text -->
-                <TextBlock Style="{StaticResource txtblDevelopmentText}">
-                The "TrackGameView" is still in development.
-                </TextBlock>
-                <!-- Textblock: Author -->
-                <TextBlock Style="{StaticResource txtblDevelopmentAuthor}">                    
-                (Designed by David B.)
-                </TextBlock>
-            </StackPanel>
+            <DockPanel>
+
+                <!-- Button: Start Tracker -->
+                <Button x:Name="btnStartTracking"
+                        DockPanel.Dock="Bottom"
+                        Style="{StaticResource btnStart}"
+                        />
+
+                <Grid DockPanel.Dock="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Grid: Center -->
+                    <Grid Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <!-- Area: Left -->
+                        <StackPanel Style="{StaticResource stpTrackGame}">
+
+                            <!-- Left: Country -->
+                            <DockPanel Style="{StaticResource dpArea}">
+
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+
+                                <TextBlock Style="{StaticResource txtblTrackGameLabelLeft}"
+                                           Text="Country:"/>
+                            </DockPanel>
+                            
+                            <!-- Left: League -->
+                            <DockPanel Style="{StaticResource dpArea}">
+
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+
+                                <TextBlock Style="{StaticResource txtblTrackGameLabelLeft}"
+                                           Text="League:"/>
+                            </DockPanel>
+                            
+                            <!-- Left: Hall -->
+                            <DockPanel Style="{StaticResource dpArea}">
+
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+
+                                <TextBlock Style="{StaticResource txtblTrackGameLabelLeft}"
+                                           Text="Hall:"/>
+                            </DockPanel>
+
+                        </StackPanel>
+
+                        <!-- Area: Right -->
+                        <StackPanel Style="{StaticResource stpTrackGame}"
+                                    Grid.Column="1">
+
+                            <!-- Left: Tracked Team -->
+                            <DockPanel Style="{StaticResource dpArea}">
+
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+
+                                <TextBlock Style="{StaticResource txtblTrackGameLabelRight}"
+                                           Text="Team 1:"/>
+                            </DockPanel>
+
+                            <!-- Left: Opponent -->
+                            <DockPanel Style="{StaticResource dpArea}">
+
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+
+                                <TextBlock Style="{StaticResource txtblTrackGameLabelRight}"
+                                           Text="Team 2:"/>
+                            </DockPanel>
+
+                        </StackPanel>
+
+                    </Grid>
+                    
+                </Grid>
+
+            </DockPanel>
 
         </Grid>
     </Grid>

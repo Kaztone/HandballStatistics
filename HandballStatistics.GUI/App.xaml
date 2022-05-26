@@ -31,6 +31,9 @@
 
                 <!-- Login -->
                 <ResourceDictionary Source="/Styles/Views/LoginView.xaml"/>
+                
+                <!-- TrackGame -->
+                <ResourceDictionary Source="/Styles/Views/TrackGameView.xaml"/>
 
                 <!-- Development -->
                 <ResourceDictionary Source="/Styles/Views/DevelopmentView.xaml"/>

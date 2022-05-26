@@ -1,6 +1,5 @@
 ﻿using HandballStatistics.Interfaces.Navigators;
 using HandballStatistics.Interfaces.ViewModels;
-using System;
 
 namespace HandballStatistics.Services.Navigators
 {

@@ -65,3 +65,4 @@ C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\Views
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\Views\LoginView.baml
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\Views\LoginView.g.cs
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\Styles\Views\LoginView.baml
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\obj\Debug\Styles\Views\TrackGameView.baml
