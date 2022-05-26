@@ -1,0 +1,121 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ################################################## -->
+    <!-- 1. COLORS -->
+    <!-- ################################################## -->
+
+    <!-- ************************************************** -->
+    <!-- 1.1. BACKGROUND -->
+    <!-- ************************************************** -->
+
+    <!-- ************************* -->
+    <!-- 1.1.1. Navigation Bar-->
+
+    <!-- 1.1.1.1. Nav Background -->
+    <Color x:Key="bgrdNav">#050309</Color>
+    <SolidColorBrush x:Key="bgrdNavBrush" Color="{StaticResource bgrdNav}"/>
+
+    <!-- 1.1.1.2. Nav Border -->
+    <Color x:Key="bgrdNavBorder">#1f1c23</Color>
+    <SolidColorBrush x:Key="bgrdNavBorderBrush" Color="{StaticResource bgrdNavBorder}"/>
+
+    <!-- ************************* -->
+    <!-- 1.1.2. Main View Default Background -->
+    <Color x:Key="bgrdMainDefault">Lightgray</Color>
+    <SolidColorBrush x:Key="bgrdMainDefaultBrush" Color="{StaticResource bgrdMainDefault}"/>
+
+    <!-- ************************* -->
+    <!-- 1.1.3. MainView -->
+    <Color x:Key="bgrdDevelopmentMain">#063158</Color>
+    <SolidColorBrush x:Key="bgrdDevelopmentMainBrush" Color="{StaticResource bgrdDevelopmentMain}"/>
+
+    <!-- ************************* -->
+    <!-- 1.1.4. SubView -->
+
+    <!-- 1.1.4.1. Header-->
+    <Color x:Key="bgrdSubHeader">#375a79</Color>
+    <SolidColorBrush x:Key="bgrdSubHeaderBrush" Color="{StaticResource bgrdSubHeader}"/>
+
+    <!-- 1.1.4.2. Nav -->
+    <Color x:Key="bgrdSubNav">#063158</Color>
+    <SolidColorBrush x:Key="bgrdSubNavBrush" Color="{StaticResource bgrdSubNav}"/>
+
+    <!-- 1.1.4.3. Body -->
+    <Color x:Key="bgrdSubBody">#8298ab</Color>
+    <SolidColorBrush x:Key="bgrdSubBodyBrush" Color="{StaticResource bgrdSubBody}"/>
+    
+    <!-- 1.1.4.4. Blur -->
+    <Color x:Key="bgrdSubBorderBlur">Gray</Color>
+    <SolidColorBrush x:Key="bgrdSubBorderBlurBrush" Color="{StaticResource bgrdSubBorderBlur}"/>
+
+
+    <!-- ************************* -->
+    <!-- 1.1.5. Main Button -->
+    <Color x:Key="bgrdMainButton">Transparent</Color>
+    <SolidColorBrush x:Key="bgrdMainButtonBrush" Color="{StaticResource bgrdMainButton}"/>
+
+    <!-- ************************* -->
+    <!-- 1.1.6. Sub Button -->
+
+    <!-- ************************* -->
+    <!-- 1.1.7. ErrorMessageButton -->
+    <Color x:Key="bgrdBtnErrorMessage">Red</Color>
+    <SolidColorBrush x:Key="bgrdBtnErrorMessageBrush" Color="{StaticResource bgrdBtnErrorMessage}"/>
+
+
+    <!-- ************************************************** -->
+    <!-- 1.2. FONT -->
+    <!-- ************************************************** -->
+    <Color x:Key="fontColorPrimary">Gainsboro</Color>
+    <SolidColorBrush x:Key="fontColorPrimaryBrush" Color="{StaticResource fontColorPrimary}"/>
+
+    <!-- ************************************************** -->
+    <!-- 1.3. HOVER -->
+    <!-- ************************************************** -->
+
+    <!-- 1.3.1 MainButton -->
+    <Color x:Key="bgrdMainButtonHover">#463d4f</Color>
+    <SolidColorBrush x:Key="bgrdMainButtonHoverBrush" Color="{StaticResource bgrdMainButtonHover}"/>
+    
+    <!-- 1.3.2. Reg/Login Button -->
+    <Color x:Key="bgrdLogRegButtonHover">#235f8e</Color>
+    <SolidColorBrush x:Key="bgrdLogRegButtonHoverBrush" Color="{StaticResource bgrdLogRegButtonHover}"/>
+
+    <!-- ################################################## -->
+    <!-- 2. CONTROLS -->
+    <!-- ################################################## -->
+
+    <!-- 2.1. CONTROL: Navigation Bar -->
+
+
+    <!-- 2.2. CONTROL: Navigation Bar Mini -->
+
+
+
+
+    <!-- ################################################## -->
+    <!-- 1.3. VIEWS -->
+    <!-- ################################################## -->
+
+    <!-- 1.3.1. VIEW: DevelopmentView -->
+    <!-- ************************************************** -->
+    <!-- 1.3.1.1. Grids -->
+    <SolidColorBrush x:Key="grdDevelopmentViewBrushBackground" Color="{StaticResource grdDevelopmentViewColorBackground}"/>
+
+    <!-- 1.3.1.1. Textblocks -->
+    <SolidColorBrush x:Key="txtblDevelopmentViewBrushForeground" Color="{StaticResource txtblDevelopmentViewColorForeground}"/>
+
+    <!-- 1.3.2. VIEW: DevelopmentView2 -->
+    <!-- ************************************************** -->
+    <!-- 1.3.2.1. Grids -->
+    <SolidColorBrush x:Key="grdDevelopmentViewBrushBackground2" Color="{StaticResource grdDevelopmentViewColorBackground2}"/>
+
+    <!-- 1.3.2.1. Textblocks -->
+    <SolidColorBrush x:Key="txtblDevelopmentViewBrushForeground2" Color="{StaticResource txtblDevelopmentViewColorForeground2}"/>
+
+    <!-- 1.3.3. VIEW: HelpView -->
+    <!-- ************************************************** -->
+
+
+</ResourceDictionary>
