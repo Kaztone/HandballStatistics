@@ -1,0 +1,7 @@
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.ViewModels.dll
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.ViewModels.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.ViewModels\obj\Debug\HandballStatistics.ViewModels.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.ViewModels\obj\Debug\HandballStatistics.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.ViewModels\obj\Debug\HandballStatistics.ViewModels.csproj.CopyComplete
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.ViewModels\obj\Debug\HandballStatistics.ViewModels.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.ViewModels\obj\Debug\HandballStatistics.ViewModels.pdb

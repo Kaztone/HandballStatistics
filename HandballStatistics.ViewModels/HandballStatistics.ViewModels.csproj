@@ -41,10 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigurationViewModel.cs" />
+    <Compile Include="HelpViewModel.cs" />
+    <Compile Include="HomeViewModel.cs" />
+    <Compile Include="LoginViewModel.cs" />
+    <Compile Include="MainViewModel.cs" />
+    <Compile Include="ProfileViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrackGameViewModel.cs" />
     <Compile Include="ViewModelBase.cs" />
+    <Compile Include="ViewStatsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HandballStatistics.Commands\HandballStatistics.Commands.csproj">
+      <Project>{C6FE3639-7F8A-4299-81A7-468006BCBFAD}</Project>
+      <Name>HandballStatistics.Commands</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HandballStatistics.Interfaces\HandballStatistics.Interfaces.csproj">
       <Project>{9EC22CCB-AF1A-442F-B860-F6C02A69FF27}</Project>
       <Name>HandballStatistics.Interfaces</Name>
