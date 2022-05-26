@@ -37,6 +37,7 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,12 +50,27 @@
   <ItemGroup>
     <Compile Include="AuthenticationServices\AuthenticationService.cs" />
     <Compile Include="AuthenticationServices\Authenticator.cs" />
+    <Compile Include="Converters\EqualValueToParameterConverter.cs" />
     <Compile Include="DbServices\AccountDataService.cs" />
     <Compile Include="DbServices\GenericDataService.cs" />
     <Compile Include="DbServices\NonQueryDataService.cs" />
+    <Compile Include="Factories\ConfigurationViewModelFactory.cs" />
+    <Compile Include="Factories\HelpViewModelFactory.cs" />
+    <Compile Include="Factories\HomeViewModelFactory.cs" />
+    <Compile Include="Factories\LoginViewModelFactory.cs" />
+    <Compile Include="Factories\ProfileViewModelFactory.cs" />
+    <Compile Include="Factories\TrackGameViewModelFactory.cs" />
+    <Compile Include="Factories\ViewModelAbstractFactory.cs" />
+    <Compile Include="Factories\ViewStatsViewModelFactory.cs" />
+    <Compile Include="Navigators\Navigator.cs" />
+    <Compile Include="Navigators\ViewModelFactoryRenavigator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HandballStatistics.Commands\HandballStatistics.Commands.csproj">
+      <Project>{C6FE3639-7F8A-4299-81A7-468006BCBFAD}</Project>
+      <Name>HandballStatistics.Commands</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HandballStatistics.EntityFramework\HandballStatistics.EntityFramework.csproj">
       <Project>{E093AD4A-700D-4726-82E2-B0B81A04CD89}</Project>
       <Name>HandballStatistics.EntityFramework</Name>
@@ -71,6 +87,11 @@
       <Project>{497F68A0-5F0B-4806-9753-7619EC860293}</Project>
       <Name>HandballStatistics.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.ViewModels\HandballStatistics.ViewModels.csproj">
+      <Project>{29594D43-A54C-461B-81FD-01BDF090894F}</Project>
+      <Name>HandballStatistics.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

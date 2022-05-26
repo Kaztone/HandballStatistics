@@ -2,18 +2,26 @@
 using HandballStatistics.Interfaces.Services;
 using HandballStatistics.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace HandballStatistics.Services.AuthenticationServices
 {
-    public class Authenticator : IAuthenticator
+    public class Authenticator : ObservableObject, IAuthenticator
     {
         private readonly IAuthenticationService authenticationService;
 
-        public Account CurrentAccount { get; private set; }
+        private Account currentAccount;
+
+        public Account CurrentAccount 
+        {
+            get => this.currentAccount;
+            private set 
+            {
+                this.currentAccount = value;
+                OnPropertyChanged(nameof(this.CurrentAccount));
+                OnPropertyChanged(nameof(this.IsLoggedIn));
+            }
+        }
 
         public bool IsLoggedIn => this.CurrentAccount != null;
 
