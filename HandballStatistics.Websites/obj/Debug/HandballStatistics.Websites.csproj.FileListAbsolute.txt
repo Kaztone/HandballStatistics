@@ -1,0 +1,7 @@
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Websites.dll
+C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Websites.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Websites\obj\Debug\HandballStatistics.Websites.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Websites\obj\Debug\HandballStatistics.Websites.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Websites\obj\Debug\HandballStatistics.Websites.csproj.CopyComplete
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Websites\obj\Debug\HandballStatistics.Websites.dll
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Websites\obj\Debug\HandballStatistics.Websites.pdb
