@@ -3,18 +3,37 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:HandballStatistics.GUI.Controls"
         mc:Ignorable="d"
         Title="Handball Score Statistics"
         Height="600"  MinHeight="545" 
         Width="1080" MinWidth="981"
         WindowStartupLocation="CenterScreen">
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
+
+        <!-- Navigation Bar -->
+        <Grid Grid.Row="0" >
+            <Grid.Style>
+                <Style TargetType="Grid">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Authenticator.IsLoggedIn}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Grid.Style>
+            
+            <controls:NavigationBar/>
+        </Grid>
+
+        <!-- Current View -->
+        <ContentControl Content="{Binding Navigator.CurrentViewModel}" 
+                        Grid.Column="1"/>
     </Grid>
-    
+
 </Window>

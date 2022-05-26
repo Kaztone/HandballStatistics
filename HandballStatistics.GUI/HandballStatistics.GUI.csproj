@@ -77,6 +77,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\NavigationBar.xaml.cs">
+      <DependentUpon>NavigationBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConfigurationView.xaml.cs">
+      <DependentUpon>ConfigurationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HelpView.xaml.cs">
+      <DependentUpon>HelpView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfileView.xaml.cs">
+      <DependentUpon>ProfileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TrackGameView.xaml.cs">
+      <DependentUpon>TrackGameView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewStatsView.xaml.cs">
+      <DependentUpon>ViewStatsView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\NavigationBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,6 +117,62 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Styles\Common.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Controls\NavigationBar\NavigationBarButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Controls\NavigationBar\NavigationBarGeneral.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Controls\NavigationBar\NavigationBarScrollviewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Views\DevelopmentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Views\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Views\Templates\ViewHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ConfigurationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HelpView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProfileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TrackGameView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ViewStatsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -118,6 +202,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HandballStatistics.Commands\HandballStatistics.Commands.csproj">
+      <Project>{c6fe3639-7f8a-4299-81a7-468006bcbfad}</Project>
+      <Name>HandballStatistics.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.EntityFramework\HandballStatistics.EntityFramework.csproj">
+      <Project>{e093ad4a-700d-4726-82e2-b0b81a04cd89}</Project>
+      <Name>HandballStatistics.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.Exceptions\HandballStatistics.Exceptions.csproj">
+      <Project>{c291901b-381f-40a6-8d4c-0f5f3f29d9ec}</Project>
+      <Name>HandballStatistics.Exceptions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HandballStatistics.Interfaces\HandballStatistics.Interfaces.csproj">
       <Project>{9EC22CCB-AF1A-442F-B860-F6C02A69FF27}</Project>
       <Name>HandballStatistics.Interfaces</Name>
@@ -130,6 +226,33 @@
       <Project>{E482B765-9C73-490B-855B-D14B05F4C705}</Project>
       <Name>HandballStatistics.Services</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.ViewModels\HandballStatistics.ViewModels.csproj">
+      <Project>{29594d43-a54c-461b-81fd-01bdf090894f}</Project>
+      <Name>HandballStatistics.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles\Visuals\Icons\icons8-add-database-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-combo-chart-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-customer-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-facebook-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-help-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-home-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-instagram-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-shutdown-30.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-square-border-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-start-64.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-subtract-30.png" />
+    <Resource Include="Styles\Visuals\Icons\icons8-twitter-circled-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles\Visuals\Logos\handball4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles\Visuals\Pictures\login_background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

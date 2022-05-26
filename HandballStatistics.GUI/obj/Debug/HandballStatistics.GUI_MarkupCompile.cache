@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.GUI\App.xaml
-11151548125
+16-275220848
 
-5-2017746502
-23742964992
-MainWindow.xaml;
+1345298747
+27-1978756925
+Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\Controls\NavigationBar\NavigationBarButtons.xaml;Styles\Controls\NavigationBar\NavigationBarGeneral.xaml;Styles\Controls\NavigationBar\NavigationBarScrollviewer.xaml;Styles\Views\DevelopmentView.xaml;Styles\Views\LoginView.xaml;Styles\Views\Templates\ViewHeader.xaml;Views\ConfigurationView.xaml;Views\HelpView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\ProfileView.xaml;Views\TrackGameView.xaml;Views\ViewStatsView.xaml;
 
 False
 
