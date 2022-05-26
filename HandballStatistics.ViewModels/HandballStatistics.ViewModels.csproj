@@ -57,6 +57,10 @@
       <Project>{C6FE3639-7F8A-4299-81A7-468006BCBFAD}</Project>
       <Name>HandballStatistics.Commands</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HandballStatistics.EntityFramework\HandballStatistics.EntityFramework.csproj">
+      <Project>{E093AD4A-700D-4726-82E2-B0B81A04CD89}</Project>
+      <Name>HandballStatistics.EntityFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HandballStatistics.Interfaces\HandballStatistics.Interfaces.csproj">
       <Project>{9EC22CCB-AF1A-442F-B860-F6C02A69FF27}</Project>
       <Name>HandballStatistics.Interfaces</Name>
