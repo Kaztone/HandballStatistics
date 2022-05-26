@@ -45,6 +45,7 @@
     <Compile Include="Country.cs" />
     <Compile Include="DomainObject.cs" />
     <Compile Include="Hall.cs" />
+    <Compile Include="League.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="ObserveableObject.cs" />
     <Compile Include="Player.cs" />

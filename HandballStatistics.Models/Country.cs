@@ -13,5 +13,7 @@ namespace HandballStatistics.Models
         public ICollection<Team> Teams { get; set; }
 
         public ICollection<Hall> Halls { get; set; }
+
+        public ICollection<League> Leagues { get; set; }
     }
 }
