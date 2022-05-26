@@ -1,0 +1,104 @@
+﻿<UserControl x:Class="HandballStatistics.GUI.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:viewModels="clr-namespace:HandballStatistics.ViewModels;assembly=HandballStatistics.ViewModels"
+             d:DataContext="{d:DesignInstance Type=viewModels:LoginViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1080">
+
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Styles/Visuals/Pictures/login_background.jpg" Stretch="UniformToFill"/>
+    </UserControl.Background>
+
+    <!-- MainGrid -->
+    <Grid>
+        
+        <!-- LoginForm -->
+        <Border Style="{StaticResource brdLoginMain}">
+            
+            <!-- LoginForm: Header -->
+            <Grid Style="{StaticResource grdLoginHeader}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                
+                <!-- Header: Big -->
+                <TextBlock Style="{StaticResource txtblLoginHeaderBig}"
+                           Text="Handball Statistics" />
+
+                <!-- Header: Small -->
+                <TextBlock Style="{StaticResource txtblLoginHeaderSmall}"
+                           Text="Your favourite Handball-Statistics tool." />
+
+                <!-- LoginForm: Body -->
+                <Grid Style="{StaticResource grdLoginBody}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Body: Username -->
+                    <Grid Style="{StaticResource grdLoginForm}" 
+                          Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                            <ColumnDefinition Width="370" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <!-- Username: Label -->
+                        <TextBlock Style="{StaticResource txtblLoginLabel}"
+                                   Grid.Column="0" 
+                                   Text="Username"/>
+                        <!-- Username: Input -->
+                        <TextBox Style="{StaticResource txtbxUsername}"
+                                 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
+                    </Grid>
+
+                    <!-- Body: Password -->
+                    <Grid Style="{StaticResource grdLoginForm}" 
+                          Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                            <ColumnDefinition Width="370" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Password: Label -->
+                        <TextBlock Style="{StaticResource txtblLoginLabel}" 
+                                   Grid.Column="0" 
+                                   Text="Password"/>
+                        <!-- Password: Input -->
+                        <PasswordBox x:Name="pbPassword" FontSize="22"
+                                     Grid.Column="1" Margin="20 0 0 0"/>
+                    </Grid>
+                    
+                    <!-- Body: BtnLogin -->
+                    <Button x:Name="btnLogin"
+                            Style="{StaticResource btnLogReg}"
+                            Grid.Row="2"
+                            Content="Login"
+                            Click="btnLogin_Click"/>
+
+                    <!-- Body: BtnRegister -->
+                    <Button x:Name="btnRegister" 
+                            Style="{StaticResource btnLogReg}" 
+                            Grid.Row="3" 
+                            Content="Don't have an account?"/>
+
+                    <!-- Body: ErrorMessage -->
+                    <TextBlock Grid.Row="4" 
+                               Style="{StaticResource txtblErrorMessage}"
+                               DataContext="{Binding ErrorMessageViewModel}"
+                               Text="{Binding Message}"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+
+</UserControl>

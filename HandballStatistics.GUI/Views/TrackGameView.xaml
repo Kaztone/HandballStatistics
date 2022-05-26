@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="HandballStatistics.GUI.Views.TrackGameView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:HandballStatistics.ViewModels;assembly=HandballStatistics.ViewModels"
+             d:DataContext="{d:DesignInstance Type=viewModels:TrackGameViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header Area -->
+        <Grid Style="{StaticResource grdHeader}" 
+              Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="1"
+                       Style="{StaticResource txtblHeader}"
+                       Text="TRACK GAME"/>
+        </Grid>
+
+        <!-- Body Area -->
+        <Grid Background="{StaticResource bgrdSubBodyBrush}"
+              Grid.Row="1">
+
+            <StackPanel Style="{StaticResource stpDevelopment}">
+                <!-- Textblock: Header -->
+                <TextBlock Style="{StaticResource txtblDevelopmentHeader}"
+                       Text="{Binding WelcomeMessage}"/>
+                <!-- Textblock: Text -->
+                <TextBlock Style="{StaticResource txtblDevelopmentText}">
+                The "TrackGameView" is still in development.
+                </TextBlock>
+                <!-- Textblock: Author -->
+                <TextBlock Style="{StaticResource txtblDevelopmentAuthor}">                    
+                (Designed by David B.)
+                </TextBlock>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+
+</UserControl>
