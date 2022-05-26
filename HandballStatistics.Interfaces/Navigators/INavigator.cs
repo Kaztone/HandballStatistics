@@ -9,11 +9,7 @@ namespace HandballStatistics.Interfaces.Navigators
         Home,
         TrackGame,
         ViewStats,
-        AddData,
-        AddTeam,
-        DeleteTeam,
-        AddPlayer,
-        DeletePlayer,
+        Configuration,
         Profile,
         Help
     }
@@ -21,7 +17,5 @@ namespace HandballStatistics.Interfaces.Navigators
     public interface INavigator
     {
         IViewModelBase CurrentViewModel { get; set; }
-
-        ICommand UpdateCurrentViewModelCommand { get; }
     }
 }
