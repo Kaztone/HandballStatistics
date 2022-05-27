@@ -48,14 +48,14 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
-                        CountryId = c.Int(nullable: false),
                         LeagueId = c.Int(nullable: false),
+                        Country_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Leagues", t => t.LeagueId, cascadeDelete: true)
-                .ForeignKey("dbo.Countries", t => t.CountryId, cascadeDelete: true)
-                .Index(t => t.CountryId)
-                .Index(t => t.LeagueId);
+                .ForeignKey("dbo.Countries", t => t.Country_Id)
+                .Index(t => t.LeagueId)
+                .Index(t => t.Country_Id);
             
             CreateTable(
                 "dbo.Players",
@@ -104,15 +104,15 @@
         public override void Down()
         {
             DropForeignKey("dbo.Shots", "MatchId", "dbo.Matches");
-            DropForeignKey("dbo.Teams", "CountryId", "dbo.Countries");
+            DropForeignKey("dbo.Teams", "Country_Id", "dbo.Countries");
             DropForeignKey("dbo.Leagues", "CountryId", "dbo.Countries");
             DropForeignKey("dbo.Teams", "LeagueId", "dbo.Leagues");
             DropForeignKey("dbo.Players", "TeamId", "dbo.Teams");
             DropForeignKey("dbo.Halls", "CountryId", "dbo.Countries");
             DropIndex("dbo.Shots", new[] { "MatchId" });
             DropIndex("dbo.Players", new[] { "TeamId" });
+            DropIndex("dbo.Teams", new[] { "Country_Id" });
             DropIndex("dbo.Teams", new[] { "LeagueId" });
-            DropIndex("dbo.Teams", new[] { "CountryId" });
             DropIndex("dbo.Leagues", new[] { "CountryId" });
             DropIndex("dbo.Halls", new[] { "CountryId" });
             DropTable("dbo.Shots");

@@ -9,3 +9,4 @@ C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.Migrations.InitialCreate.resources
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.csproj.GenerateResource.cache
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.Migrations.AddedDbSetAccounts.resources
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.EntityFramework\obj\Debug\HandballStatistics.EntityFramework.Migrations.AddedMissingModels.resources

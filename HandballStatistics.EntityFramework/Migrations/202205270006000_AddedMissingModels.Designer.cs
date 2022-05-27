@@ -13,7 +13,7 @@ namespace HandballStatistics.EntityFramework.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202205270000189_AddedMissingModels"; }
+            get { return "202205270006000_AddedMissingModels"; }
         }
         
         string IMigrationMetadata.Source
