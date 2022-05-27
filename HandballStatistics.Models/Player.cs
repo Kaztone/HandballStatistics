@@ -38,7 +38,6 @@
         /// Creates <see cref="Player"/> full name.
         /// </summary>
         /// <returns>Full <see cref="Player"/> name.</returns>
-        /// <remarks></remarks>
         public string FullName()
         {
             return $"{this.FirstName} {this.LastName}";

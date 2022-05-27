@@ -3,7 +3,7 @@
 namespace HandballStatistics.Models
 {
     /// <summary>
-    /// Base class for ObserveableObject.
+    /// Base class for ObservableObject.
     /// Derives from <see cref="INotifyPropertyChanged"/> class.
     /// </summary>
     public class ObservableObject : INotifyPropertyChanged
@@ -20,7 +20,6 @@ namespace HandballStatistics.Models
         /// Raises <see cref="PropertyChanged"/> event.
         /// </summary>
         /// <param name="propertyName">String value of property name.</param>
-        /// <remarks></remarks>
         protected void OnPropertyChanged(string propertyName)
         {
             this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

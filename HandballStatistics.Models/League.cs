@@ -15,7 +15,7 @@ namespace HandballStatistics.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Abbrevation.
+        /// Gets or sets Abbreviation.
         /// </summary>
         public string Abbrevation { get; set; }
 
