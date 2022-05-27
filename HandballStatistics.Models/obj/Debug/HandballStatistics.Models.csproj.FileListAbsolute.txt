@@ -5,3 +5,4 @@ C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Models\obj\Debug\Ha
 C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Models\obj\Debug\HandballStatistics.Models.pdb
 C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Models.dll
 C:\Users\david\Desktop\HandballStatistics\bin\Debug\HandballStatistics.Models.pdb
+C:\Users\david\Desktop\HandballStatistics\HandballStatistics.Models\obj\Debug\HandballStatistics.Models.csproj.AssemblyReference.cache
