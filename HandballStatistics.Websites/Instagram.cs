@@ -1,6 +1,4 @@
-﻿using HandballStatistics.Interfaces.Models;
-
-namespace HandballStatistics.Websites
+﻿namespace HandballStatistics.Websites
 {
     /// <summary>
     /// Base class for Instagram.

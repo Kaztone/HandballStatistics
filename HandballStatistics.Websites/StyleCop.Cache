@@ -76,7 +76,7 @@
     <timestamps>
       <styleCop>2021/10/18 09:11:08.605</styleCop>
       <settingsFile>2022/05/27 04:36:35.913</settingsFile>
-      <sourceFile>2022/05/27 04:39:44.970</sourceFile>
+      <sourceFile>2022/05/27 04:41:51.372</sourceFile>
       <parser>2021/10/18 09:11:08.605</parser>
       <StyleCop.CSharp.DocumentationRules>2021/10/18 09:11:08.605</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1559490771</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -95,8 +95,8 @@
     </timestamps>
     <violations>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementDocumentationMustBeSpelledCorrectly" ruleCheckId="SA1650">
-        <context>The documentation text within the summary tag contains incorrectly spelled words: 'Instagram'</context>
-        <line>9</line>
+        <context>The documentation text within the summary tag contains incorrectly spelled words: 'instagram'</context>
+        <line>7</line>
         <warning>False</warning>
       </violation>
     </violations>
@@ -105,7 +105,7 @@
     <timestamps>
       <styleCop>2021/10/18 09:11:08.605</styleCop>
       <settingsFile>2022/05/27 04:36:35.913</settingsFile>
-      <sourceFile>2022/05/27 04:39:34.686</sourceFile>
+      <sourceFile>2022/05/27 04:40:01.336</sourceFile>
       <parser>2021/10/18 09:11:08.605</parser>
       <StyleCop.CSharp.DocumentationRules>2021/10/18 09:11:08.605</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1559490771</StyleCop.CSharp.DocumentationRules.FilesHashCode>
