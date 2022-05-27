@@ -1,9 +1,7 @@
-﻿using HandballStatistics.EntityFramework.Contexts;
-using HandballStatistics.Interfaces.Services;
+﻿using HandballStatistics.Interfaces.Services;
 using HandballStatistics.Models;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace HandballStatistics.ViewModels
 {
@@ -15,9 +13,9 @@ namespace HandballStatistics.ViewModels
 
         private readonly IDataService<Hall> hallDataService; 
 
-        private readonly IDataService<Team> teamDataService; 
+        private readonly IDataService<Team> teamDataService;
 
-        private readonly HandballStatisticsDbContext context;
+        public ICommand NewGameCommand { get; }
 
         public TrackGameViewModel(
             IDataService<Country> countryDataService, 
@@ -54,25 +52,25 @@ namespace HandballStatistics.ViewModels
         public async void GetCountries()
         {
             var countries = await this.countryDataService.GetAll();
-            this.Countries = (ObservableCollection<Country>)countries;
+            this.Countries = new ObservableCollection<Country>(countries);
         }
 
         public async void GetLeagues()
         {
             var leagues = await this.leagueDataService.GetAll();
-            this.Leagues = (ObservableCollection<League>)leagues;
+            this.Leagues = new ObservableCollection<League>(leagues);
         }
 
         public async void GetHalls()
         {
             var halls = await this.hallDataService.GetAll();
-            this.Halls = (ObservableCollection<Hall>)halls;
+            this.Halls = new ObservableCollection<Hall>(halls);
         }
 
         public async void GetTeams()
         {
             var teams = await this.teamDataService.GetAll();
-            this.Teams = (ObservableCollection<Team>)teams;
+            this.Teams = new ObservableCollection<Team>(teams);
         }
 
     }

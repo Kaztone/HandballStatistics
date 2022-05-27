@@ -17,7 +17,7 @@
     <!-- COMBOBOXES -->
     <Style x:Key="cmbxTrackGame" TargetType="ComboBox">
         <Setter Property="DockPanel.Dock" Value="Right"/>
-        <Setter Property="Width" Value="150"/>
+        <Setter Property="Width" Value="180"/>
     </Style>
     
     <!-- TEXTBLOCKS -->
@@ -42,7 +42,7 @@
         <Setter Property="Background" Value="Green"/>
         <Setter Property="Height" Value="50"/>
         <Setter Property="Width" Value="120"/>
-        <Setter Property="Margin" Value="0 0 0 50"/>
+        <Setter Property="Margin" Value="0 15"/>
         <Setter Property="FontFamily" Value="./#Open Sans"/>
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="BorderThickness" Value="0"/>

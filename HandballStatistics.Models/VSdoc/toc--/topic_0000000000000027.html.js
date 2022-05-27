@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"HandballStatistics.Models Reference","topic_0000000000000034.html"],['4',"HandballStatistics.Models Namespace","topic_0000000000000000.html"],['50',"Shot Class","topic_0000000000000024.html"],['51',"Properties","topic_0000000000000024_props--.html"],['55',"SquareNumber Property","topic_0000000000000027.html"]];

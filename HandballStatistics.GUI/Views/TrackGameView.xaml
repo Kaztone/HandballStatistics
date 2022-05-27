@@ -61,7 +61,8 @@
                             <DockPanel Style="{StaticResource dpArea}">
 
                                 <ComboBox Style="{StaticResource cmbxTrackGame}"
-                                          DataContext="{Binding Countries}"/>
+                                          ItemsSource="{Binding Countries}"
+                                          DisplayMemberPath="Name"/>
 
                                 <TextBlock Style="{StaticResource txtblTrackGameLabelLeft}"
                                            Text="Country:"/>
@@ -70,7 +71,9 @@
                             <!-- Left: League -->
                             <DockPanel Style="{StaticResource dpArea}">
 
-                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"
+                                          ItemsSource="{Binding Leagues}"
+                                          DisplayMemberPath="Name"/>
 
                                 <TextBlock Style="{StaticResource txtblTrackGameLabelLeft}"
                                            Text="League:"/>
@@ -79,7 +82,9 @@
                             <!-- Left: Hall -->
                             <DockPanel Style="{StaticResource dpArea}">
 
-                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"
+                                          ItemsSource="{Binding Halls}"
+                                          DisplayMemberPath="Name"/>
 
                                 <TextBlock Style="{StaticResource txtblTrackGameLabelLeft}"
                                            Text="Hall:"/>
@@ -94,7 +99,8 @@
                             <!-- Left: Tracked Team -->
                             <DockPanel Style="{StaticResource dpArea}">
 
-                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"
+                                          ItemsSource="{Binding Teams}"/>
 
                                 <TextBlock Style="{StaticResource txtblTrackGameLabelRight}"
                                            Text="Team 1:"/>
@@ -103,7 +109,8 @@
                             <!-- Left: Opponent -->
                             <DockPanel Style="{StaticResource dpArea}">
 
-                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"
+                                          ItemsSource="{Binding Teams}"/>
 
                                 <TextBlock Style="{StaticResource txtblTrackGameLabelRight}"
                                            Text="Team 2:"/>
