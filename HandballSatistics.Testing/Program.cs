@@ -10,12 +10,17 @@ using System.Linq;
 
 namespace HandballStatistics.Testing
 {
-    class Program
+    /// <summary>
+    /// Base class for Program.
+    /// </summary>
+    public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Main Method
+        /// </summary>
+        /// <param name="args">Main method args.</param>
+        public static void Main(string[] args)
         {
-            #region ------------------------------ Service Implementation --------------------------
-
             IDataService<User> dataService = new GenericDataService<User>(
                 new HandballStatisticsDbContext());
 
@@ -26,17 +31,13 @@ namespace HandballStatistics.Testing
 
             IWebsite website = new Facebook();
 
-            #endregion
-
-            #region ------------------------------ GenericDataService ------------------------------
-
             Console.WriteLine("--------------------------------------------------");
             Console.WriteLine("Test: GenericDataService");
             Console.WriteLine("--------------------------------------------------\n");
 
             // Check connection GenericDataService
             bool check = dataService.Init().Result;
-            Console.WriteLine($"GenericDataService database connection established: {check}{Environment.NewLine}");           
+            Console.WriteLine($"GenericDataService database connection established: {check}{Environment.NewLine}");
 
             // Check "Get" GenericDataService
             User user = dataService.Get(1).Result;
@@ -46,18 +47,13 @@ namespace HandballStatistics.Testing
                 $"Email: {user.Email}\n" +
                 $"Password: {user.Password}\n" +
                 $"Date joined: {user.DateJoined.ToShortDateString()}" +
-                $"{Environment.NewLine}"
-            );
+                $"{Environment.NewLine}");
 
             // Check "GetAll" GenericDataService
             int numberUsers = dataService.GetAll().Result.Count();
             Console.WriteLine($"Total users:{numberUsers}{Environment.NewLine}");
 
             Console.WriteLine("--------------------------------------------------");
-
-            #endregion
-
-            #region ------------------------------ AccountDataService ------------------------------
 
             Console.WriteLine("Test: AccountDataService");
             Console.WriteLine("--------------------------------------------------\n");
@@ -71,14 +67,9 @@ namespace HandballStatistics.Testing
             Console.WriteLine(
                 $"AccountId: {account.Id}\n" +
                 $"AccountHolderId: {account.AccountHolderId}\n" +
-                $"AccountHolderName: {account.AccountHolder.UserName}\n"
-            );
+                $"AccountHolderName: {account.AccountHolder.UserName}\n");
 
             Console.WriteLine("--------------------------------------------------");
-
-            #endregion
-
-            #region ------------------------------ AuthenticationService ---------------------------
 
             Console.WriteLine("Test: AccountDataService");
             Console.WriteLine("--------------------------------------------------\n");
@@ -87,8 +78,7 @@ namespace HandballStatistics.Testing
             // authenticationService.Register("registrationTest", "test@hotmail.com", "registrationTest", "registrationTest").Wait();
             Console.WriteLine(
                 $"Total users: {dataService.GetAll().Result.Count()}\n" +
-                $"Total accounts: {accountDataService.GetAll().Result.Count()}\n"
-            );
+                $"Total accounts: {accountDataService.GetAll().Result.Count()}\n");
 
             // Check AuthenticationService: Login
             account = authenticationService.Login("admin", "admin").Result;
@@ -101,16 +91,10 @@ namespace HandballStatistics.Testing
             Console.WriteLine(account.AccountHolder.UserName);
             Console.WriteLine(account.AccountHolder.Id);
 
-            #endregion
-
-            #region ------------------------------ AuthenticationService ---------------------------
-
             Console.WriteLine("Open website facebook on [ENTER]:");
             Console.ReadLine();
 
             System.Diagnostics.Process.Start(website.URL);
-
-            #endregion
 
             Console.ReadLine();
         }
