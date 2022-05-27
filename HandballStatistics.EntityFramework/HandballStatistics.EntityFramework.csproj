@@ -60,6 +60,10 @@
     <Compile Include="Migrations\202205231339178_AddedDbSetAccounts.designer.cs">
       <DependentUpon>202205231339178_AddedDbSetAccounts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205270000189_AddedMissingModels.cs" />
+    <Compile Include="Migrations\202205270000189_AddedMissingModels.designer.cs">
+      <DependentUpon>202205270000189_AddedMissingModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205231339178_AddedDbSetAccounts.resx">
       <DependentUpon>202205231339178_AddedDbSetAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205270000189_AddedMissingModels.resx">
+      <DependentUpon>202205270000189_AddedMissingModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

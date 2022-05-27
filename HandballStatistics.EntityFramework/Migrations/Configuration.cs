@@ -16,28 +16,37 @@ namespace HandballStatistics.EntityFramework.Migrations
 
         protected override void Seed(HandballStatisticsDbContext context)
         {
-            if (context.Users.Any())
-            {
-                return;
-            }
+            //if (context.Users.Any())
+            //{
+            //    return;
+            //}
 
-            User user = new User()
-            {
-                UserName = "admin",
-                Email = "admin@hotmail.com",
-                Password = "admin",
-                DateJoined = new DateTime(2022, 3, 23).Date
-            };
+            //User user = new User()
+            //{
+            //    UserName = "admin",
+            //    Email = "admin@hotmail.com",
+            //    Password = "admin",
+            //    DateJoined = new DateTime(2022, 3, 23).Date
+            //};
 
-            context.Users.AddRange(new List<User>()
-            {
-                user
-            });
+            //context.Users.AddRange(new List<User>()
+            //{
+            //    user
+            //});
 
-            context.Accounts.AddRange(new List<Account>()
-            {
-                new Account(user)
-            }); 
+            //context.Accounts.AddRange(new List<Account>()
+            //{
+            //    new Account(user)
+            //});
+
+            //context.Countries.AddRange(new List<Country>()
+            //{
+            //    new Country() { Name = "Autria" },
+            //    new Country() { Name = "Germany" },
+            //    new Country() { Name = "France" },
+            //    new Country() { Name = "Spain" },
+            //    new Country() { Name = "Switzerland" }
+            //});
         }
     }
 }

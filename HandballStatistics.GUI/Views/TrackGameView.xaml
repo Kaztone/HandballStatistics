@@ -60,7 +60,8 @@
                             <!-- Left: Country -->
                             <DockPanel Style="{StaticResource dpArea}">
 
-                                <ComboBox Style="{StaticResource cmbxTrackGame}"/>
+                                <ComboBox Style="{StaticResource cmbxTrackGame}"
+                                          DataContext="{Binding Countries}"/>
 
                                 <TextBlock Style="{StaticResource txtblTrackGameLabelLeft}"
                                            Text="Country:"/>
